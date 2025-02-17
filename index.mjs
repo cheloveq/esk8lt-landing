@@ -105,10 +105,4 @@ document.addEventListener("DOMContentLoaded", () => {
       obj.addEventListener("load", checkAllLoaded)
     }
   })
-
-  window.addEventListener('unload', () => {
-    if (animationFrame) {
-      cancelAnimationFrame(animationFrame)
-    }
-  })
 })

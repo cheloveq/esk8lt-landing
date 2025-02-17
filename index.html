@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta name="author" content="cheloveq" />
-    <meta name="keywords" content="electric skateboard, eskate, esk8, Lithuania, Vilnius, LT, skateboarding, electric vehicle, PEV, community, elektrinė riedlente, elektrinis, longboardas, longboardas" />
+    <meta
+      name="keywords"
+      content="electric skateboard, eskate, esk8, Lithuania, Vilnius, LT, skateboarding, electric vehicle, PEV, community, elektrinė riedlente, elektrinis, longboardas, longboardas"
+    />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <meta
       name="description"
@@ -46,8 +49,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preload" href="assets/city.svg" as="image" type="image/svg+xml">
-    <link rel="preload" href="assets/text-logo.svg" as="image" type="image/svg+xml">
+    <link
+      rel="preload"
+      href="assets/city.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="assets/text-logo.svg"
+      as="image"
+      type="image/svg+xml"
+    />
     <script type="module" src="index.mjs" defer></script>
     <script type="application/ld+json">
       {
@@ -64,18 +77,20 @@
           "https://www.facebook.com/share/g/18f15mcqm8"
         ]
       }
-      </script>
+    </script>
     <title>ESK8 Lithuania</title>
   </head>
   <body>
     <main>
-      <h1 class="visually-hidden">ESK8 Lithuania - Electric Skateboarding Community</h1>
-      <object
-        data="assets/text-logo.svg"
-        type="image/svg+xml"
-        class="text-logo"
-        aria-label="ESK8 Lithuania Text Logo"
-      ></object>
+      <div class="texts">
+        <object
+          data="assets/text-logo.svg"
+          type="image/svg+xml"
+          class="text-logo"
+          aria-label="ESK8 Lithuania Text Logo"
+        ></object>
+        <h1 class="title">Lietuvos elektrinių riedlenčių bendruomenė</h1>
+      </div>
       <div class="animation">
         <svg
           class="logo"
@@ -786,11 +801,13 @@
               id="city1"
               data="assets/city.svg"
               type="image/svg+xml"
+              aria-label="city image"
             ></object>
             <object
               id="city2"
               data="assets/city.svg"
               type="image/svg+xml"
+              aria-label="city image"
             ></object>
           </div>
           <div class="road"></div>
