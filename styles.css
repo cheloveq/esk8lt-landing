@@ -33,6 +33,23 @@ main {
   overflow: hidden;
 }
 
+.text-logo {
+  position: absolute;
+  left: 50%;
+  top: 420px;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 53px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 3;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 1));
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -webkit-backface-visibility: hidden;
+  transform: translateX(-50%) translateZ(0);
+  backface-visibility: hidden;
+}
+
 #logo,
 .cityscape {
   pointer-events: none;
@@ -149,8 +166,9 @@ main {
 .social-icons {
   width: 100%;
   max-width: 300px;
-  padding-bottom: 100px;
+  /* padding-bottom: 50px; */
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 }
