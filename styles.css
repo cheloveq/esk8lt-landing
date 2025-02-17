@@ -14,14 +14,9 @@ body {
   overflow: hidden;
   touch-action: none;
   user-select: none;
-  opacity: 0;
   transition: opacity 0.3s ease-in;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-}
-
-body.loaded {
-  opacity: 1;
 }
 
 main {

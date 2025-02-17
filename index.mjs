@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkAllLoaded = () => {
     loadedCount++
     if (loadedCount === objects.length) {
-      document.body.classList.add("loaded")
+      // document.body.classList.add("loaded")
 
       const cityscape = document.querySelector(".cityscape")
       const cities = cityscape.innerHTML
