@@ -195,6 +195,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .social-icon-link:hover {
@@ -203,6 +204,7 @@ main {
 }
 
 .social-icon {
+  pointer-events: none;
   width: 30px;
   height: 30px;
 }
