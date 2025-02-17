@@ -72,22 +72,14 @@ object {
   position: relative;
   width: fit-content;
   height: 100%;
-  animation: scroll 5s linear infinite;
+  --scroll-duration: 5s;
+  animation: scroll var(--scroll-duration) linear infinite;
   overflow: hidden;
   will-change: transform;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-}
-
-@keyframes scroll {
-  from {
-    transform: translate3d(-800px, 0, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 .cityscape object {
@@ -139,19 +131,9 @@ object {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .spokes {
   transform-box: fill-box;
   transform-origin: 50% 50%;
-  animation: spin 1s linear infinite;
   will-change: transform;
 }
 
@@ -189,3 +171,30 @@ object {
   height: 80px;
   pointer-events: none;
 }
+
+/* .speed-controls {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.speed-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.speed-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.speed-button:active {
+  transform: translateY(0px);
+} */
