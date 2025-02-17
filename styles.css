@@ -166,26 +166,32 @@ main {
 .social-icons {
   width: 100%;
   max-width: 300px;
-  /* padding-bottom: 50px; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 80px;
 }
 
 .social-icon-link {
-  opacity: 0.8;
   transition: all 0.3s ease;
   width: 60px;
   height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon-link:hover {
-  opacity: 1;
+  background-color: black;
   transform: translateY(-8px);
 }
 
 .social-icon {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
