@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const objects = document.querySelectorAll("object")
-  let loadedCount = 0
-
   let currentSpeed = 3
   const MIN_SPEED = currentSpeed
   const MAX_SPEED = 12
@@ -85,24 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
     isGestureInProgress = false
   })
 
-  const checkAllLoaded = () => {
-    loadedCount++
-    if (loadedCount === objects.length) {
-      // document.body.classList.add("loaded")
+  const cityscape = document.querySelector(".cityscape")
+  const city = cityscape.innerHTML
+  cityscape.innerHTML = city + city + city + city + city
 
-      const cityscape = document.querySelector(".cityscape")
-      const cities = cityscape.innerHTML
-      cityscape.innerHTML = cities + cities
-
-      animationFrame = requestAnimationFrame(animate)
-    }
-  }
-
-  objects.forEach((obj) => {
-    if (obj.getSVGDocument()) {
-      checkAllLoaded()
-    } else {
-      obj.addEventListener("load", checkAllLoaded)
-    }
-  })
+  document.querySelector(".cityscape-container").classList.add("loaded")
+  animationFrame = requestAnimationFrame(animate)
 })
