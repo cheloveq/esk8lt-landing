@@ -61,15 +61,11 @@ main {
   backface-visibility: hidden;
 }
 
-#logo,
-.cityscape {
-  pointer-events: none;
-  user-select: none;
-}
-
 .animation {
   height: 420px;
   width: 100vw;
+  pointer-events: none;
+  user-select: none;
 }
 
 .road {
@@ -118,7 +114,7 @@ main {
   -webkit-transform: translateZ(0);
 }
 
-#logo {
+.logo {
   position: absolute;
   top: 100px;
   z-index: 2;
