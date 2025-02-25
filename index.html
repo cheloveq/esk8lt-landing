@@ -140,13 +140,13 @@
         }
       })(document, window.mixpanel || [])
 
-      mixpanel.init(process.env.MIXPANEL_TOKEN)
+      mixpanel.init("e1405a270eb1ebf1671eded4bb680121")
 
       window.addEventListener("load", function () {
         mixpanel.track("Page Viewed", {
           page: window.location.pathname,
         })
-        
+
         document.querySelectorAll("a").forEach(function (link) {
           link.addEventListener("click", function () {
             mixpanel.track("Link Clicked", {
